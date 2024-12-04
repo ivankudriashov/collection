@@ -1,0 +1,4 @@
+@mixin content-container($margin-left, $margin-right) {
+  margin-inline-start: $margin-left;
+  margin-inline-end: $margin-right;
+}

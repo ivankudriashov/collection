@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+
+    &__logo {
+        display: block;
+        width: 65px;
+        height: 20px;
+
+        &:focus-visible {
+            outline: 1px solid $green-focus;
+        }
+    }
+
+    &__menu {
+        margin-inline-start: 125px;
+
+        @media screen and (width <= 768px) {
+            margin-inline-start: 0;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        margin-inline-start: auto;
+
+        @media screen and (width <= 768px) {
+            gap: 32px;
+        }
+    }
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        color: $primary-green;
+
+        &:hover {
+            color: $green-hover;
+        }
+
+        &:focus-visible {
+            outline: 1px solid $green-focus;
+        }
+
+        &:active {
+            color: $green-activeclick;
+        }
+    }
+
+    .logo {
+        fill: $white;
+    }
+}
+
+

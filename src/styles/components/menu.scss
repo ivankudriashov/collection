@@ -1,0 +1,31 @@
+@import './mixins/typography';
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    @media screen and (width <= 768px) {
+        gap: 32px;
+    }
+
+    &__link {
+        @include p1-main($white);
+        display: block;
+        // padding-inline-start: 7px;
+        // padding-inline-end: 7px;
+
+        &:hover {
+            color: $primary-green;
+            transition: color 0.3s;
+        }
+
+        &:focus-visible {
+            outline: 1px solid $green-focus;
+        }
+
+        &:active {
+            color: $green-activeclick;
+        }
+    }
+}
