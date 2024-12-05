@@ -9,6 +9,7 @@
         display: block;
         width: 65px;
         height: 20px;
+        flex-shrink: 0;
 
         &:focus-visible {
             outline: 1px solid $green-focus;
@@ -16,10 +17,19 @@
     }
 
     &__menu {
-        margin-inline-start: 125px;
+        flex-shrink: 0;
+        margin-inline-start: calc((125 / 11.1) * 1%);
+        margin-inline-end: calc((125 / 11.1) * 1%);
 
         @media screen and (width <= 768px) {
+            position: absolute;
+            left: 32px;
+            bottom: -35px;
+            width: calc(100% - 32px);
             margin-inline-start: 0;
+            margin-inline-end: 0;
+
+            overflow: auto;
         }
     }
 
@@ -27,9 +37,10 @@
         display: flex;
         align-items: center;
         gap: 64px;
+        flex-shrink: 0;
         margin-inline-start: auto;
 
-        @media screen and (width <= 768px) {
+        @media screen and (width <= 920px) {
             gap: 32px;
         }
     }
