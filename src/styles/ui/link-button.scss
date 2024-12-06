@@ -1,0 +1,41 @@
+.link-button {
+    $border-color: $primary-green;
+    $text-color: $primary-green;
+    $bg-color: transparent;
+    $outline-color: none;
+    
+
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 45px;
+    border: 1px solid $border-color;
+    color: $text-color;
+    background-color: $bg-color;
+
+    &:hover {
+        $border-color: $primary-green;
+        $text-color: $background-shade;
+        $bg-color: $primary-green;
+
+        color: $text-color;
+        background-color: $bg-color;
+        border: 1px solid $border-color;
+    }
+
+    &:focus-visible {
+        $outline-color: $green-focus;
+        outline: 1px solid $outline-color;
+        outline-offset: 2px;
+    }
+
+    &:active{
+        $bg-color: $green-activeclick;
+        background-color: $bg-color;
+    }
+}

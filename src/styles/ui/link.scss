@@ -1,0 +1,42 @@
+.link {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+
+    &--green {
+        color: $primary-green;
+
+        &:hover {
+            color: $green-hover;
+            transition: color 0.3s;
+        }
+
+        &:focus-visible {
+            outline: 1px solid $green-focus;
+        }
+
+        &:active {
+            color: $green-activeclick;
+        }
+    }
+
+    &--icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+            .arrow-long {
+                transform: scaleX(1.2);
+                transform-origin: 0 0;
+                transition: transform 0.3s;
+            }
+        }
+    }
+
+    .arrow-long {
+        width: 43px;
+        color: currentColor;
+    }
+
+}

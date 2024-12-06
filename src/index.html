@@ -32,7 +32,7 @@
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__link">Галерея</a>
+          <a href="#gallery" class="menu__link">Галерея</a>
         </li>
 
         <li class="menu__item">
@@ -63,8 +63,129 @@
     </ul>
   </header>
 
-  <main class="content">
-    <div style="height: 500px; background: #757575;" class=""></div>
+  <main class="main">
+    <section class="about">
+      <div class="about__wrapper main-container">
+        <h1 class="about__title">Крупнейшая коллекция природных артефактов</h1>
+        <p class="about__desctiption">Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
+        <a href="#" class="about__link link link--green link--icon">
+          <span>Исследовать</span>
+          <svg viewBox="0 0 44 15" class="arrow-long">
+            <use xlink:href="./icons/arrow-long.svg#arrow-long">
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery section main-container" id="gallery">
+      <div class="gallery__slider">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <article class="card">
+              <div class="card__image">
+                <span class="card__number">2.4</span>
+                <img src="./images/cards/1.png" alt="растение">
+              </div>
+  
+              <div class="card__content">
+                <h3 class="card__title">Fig. 1 (plant)</h3>
+                <p class="card__text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                <a href="#" class="card__button link-button link-button--transparent">Подробнее</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="gallery__item">
+            <article class="card">
+              <div class="card__image">
+                <span class="card__number">2.4</span>
+                <img src="./images/cards/2.png" alt="растение">
+              </div>
+  
+              <div class="card__content">
+                <h3 class="card__title">Fig. 2 (flower)</h3>
+                <p class="card__text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+                <a href="" class="card__button link-button link-button--transparent">Подробнее</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="gallery__item">
+            <article class="card">
+              <div class="card__image">
+                <span class="card__number">2.4</span>
+                <img src="./images/cards/3.png" alt="растение">
+              </div>
+  
+              <div class="card__content">
+                <h3 class="card__title">Fig. 3 (leaf)</h3>
+                <p class="card__text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+                <a href="" class="card__button link-button link-button--transparent">Подробнее</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="gallery__item">
+            <article class="card">
+              <div class="card__image">
+                <span class="card__number">2.4</span>
+                <img src="./images/cards/4.png" alt="растение">
+              </div>
+  
+              <div class="card__content">
+                <h3 class="card__title">Fig. 4 (wood)</h3>
+                <p class="card__text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+                <a href="" class="card__button link-button link-button--transparent">Подробнее</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="gallery__item">
+            <article class="card">
+              <div class="card__image">
+                <span class="card__number">2.4</span>
+                <img src="./images/cards/5.png" alt="растение">
+              </div>
+  
+              <div class="card__content">
+                <h3 class="card__title">Fig. 1 (plant)</h3>
+                <p class="card__text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                <a href="" class="card__button link-button link-button--transparent">Подробнее</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <div class="gallery__slider-nav">
+          <div class="gallery__arrows">
+            <button class="gallery__button gallery__button--left">
+              <svg viewBox="0 0 26 16" class="gallery__arrow ">
+                <use xlink:href="./icons/arrow.svg#arrow">
+              </svg>
+            </button>
+
+            <div class="gallery__counter">
+              <span>1</span>
+              <span>из</span>
+              <span>3</span>
+            </div>
+
+            <button class="gallery__button gallery__button--right">
+              <svg viewBox="0 0 26 16" class="gallery__arrow ">
+                <use xlink:href="./icons/arrow.svg#arrow">
+              </svg>
+            </button>
+          </div>
+
+          <div class="gallery__bullets">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
 
   <footer>

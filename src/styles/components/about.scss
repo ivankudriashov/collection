@@ -1,0 +1,46 @@
+@import '../mixins/typography';
+
+.about {
+    position: relative;
+    background-image: url(./images/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-block: 125px;
+
+    @media screen and (width <= 768px) {
+        padding-block: 69px 30px;
+    }
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(29, 47, 48, 0.7);
+        content: '';
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__title {
+        @include h1-bold($white);
+        max-width: 688px;
+        margin-block-end: 16px;
+
+        @media screen and (width <= 768px) {
+            font-size: 48px;
+            margin-block-end: 30px;
+        }
+    }
+
+    &__desctiption {
+        @include p1-main($white);
+        max-width: 635px;
+        margin-block-end: 24px;
+
+        @media screen and (width <= 768px) {
+            display: none;
+        }
+    }
+}

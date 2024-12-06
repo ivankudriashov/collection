@@ -1,43 +1,24 @@
+// globals
 @import './globals/fonts';
 @import './globals/variables';
 @import './globals/globals';
 
+// mixins
 @import './mixins/typography';
 
-html {
-  height: 100%;
-}
+// ui
+@import './ui/link';
+@import './ui/link-button';
 
-.body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: $font-family;
-  background-color: $background;
-}
-
-.main-container {
-  margin: 0 auto;
-  max-width: 1140px;
-  width: 100%;
-  padding-inline-start: 15px;
-  padding-inline-end: 15px;
-
-  @media screen and (width <= 768px) {
-    padding-inline-start: 32px;
-    padding-inline-end: 32px;
-  }
-}
-
+// components
+@import './components/layout';
+@import './components/header';
+@import './components/menu';
+@import './components/about';
+@import './components/gallery';
+@import './components/card';
 
 
 // TODO:
 // - поменять курсор
-// -разобраться с outline в меню
-
-// @import './components/layout';
-
-@import './components/header';
-@import './components/menu';
-
-
+// - разобраться с outline в меню
