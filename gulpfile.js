@@ -21,7 +21,7 @@ function scss() {
   const plugins = [
       autoprefixer(),
       mediaquery(),
-      // cssnano()
+      cssnano()
   ];
   return gulp.src('src/styles/index.scss')
         .pipe(sass())

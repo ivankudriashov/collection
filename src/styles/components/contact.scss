@@ -1,16 +1,12 @@
 @import '../mixins/typography';
 
-.about {
+.contact {
     position: relative;
-    background-image: url(./images/header-bg.jpg);
+    padding-block: 60px;
+    background-image: url('./images/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-block: 125px;
-
-    @media screen and (width <= 768px) {
-        padding-block: 69px 30px;
-    }
 
     &::before {
         position: absolute;
@@ -24,23 +20,22 @@
     }
 
     &__title {
-        @include h1-bold($white);
-        max-width: 688px;
-        margin-block-end: 16px;
+        @include h2-bold-italic($white);
 
-        @media screen and (width <= 768px) {
-            font-size: 48px;
-            margin-block-end: 30px;
-        }
+        margin-block-end: 16px;
     }
 
-    &__desctiption {
+    &__description {
         @include p1-main($white);
-        max-width: 635px;
-        margin-block-end: 24px;
+
+        max-width: 825px;
 
         @media screen and (width <= 768px) {
             display: none;
         }
+    }
+
+    &__form {
+        margin-block-start: 24px;
     }
 }

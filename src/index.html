@@ -18,7 +18,7 @@
 </head>
 <body class="body">
   <header class="header main-container">
-   <!-- <div class="header__container main_container"></div> -->
+    <h2 class="visually-hidden">Галерея</h2>
     <a href="#" class="header__logo">
       <svg viewBox="0 0 65 20">
         <use xlink:href="./icons/logo.svg#logo" class="logo">
@@ -36,11 +36,11 @@
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__link">О лаборатории</a>
+          <a href="#artefacts" class="menu__link">О лаборатории</a>
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
+          <a href="#contact" class="menu__link">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -184,12 +184,95 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="artefacts section main-container" id="artefacts">
+      <h2 class="artefacts__title">Новые артефакты</h2>
+      <div class="artefacts__wrapper">
+        <div class="artefacts__img">
+          <img src="./images/art-pic.jpg" alt="растения">
+          <span class="artefacts__hint">Swipe to see more
+            <svg viewBox="0 0 81 8" class="arrow-longest">
+              <use xlink:href="./icons/arrow-longest.svg#arrow-longest">
+            </svg>
+          </span>
+        </div>
+
+        <article class="artefacts__card">
+          <h3 class="artefacts__subtitle">Kurische Nehrung 24</h3>
+
+          <p class="artefacts__text">Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. </p>
+
+          <p class="artefacts__text">Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
+
+          <a href="#" class="artefacts__link link link--dark link--icon ">
+            <span>Читать далее</span>
+            <svg viewBox="0 0 44 15" class="arrow-long">
+              <use xlink:href="./icons/arrow-long.svg#arrow-long">
+            </svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="main-container contact__wrapper">
+        <h2 class="contact__title">Помочь проекту</h2>
+
+        <p class="contact__description">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+  
+        <form action="#" class="contact__form form">
+          <label for="name" class="visually-hidden"></label>
+          <input required type="text" name="name" id="name" placeholder="Имя" class="form__input">
+  
+          <label for="email" class="visually-hidden"></label>
+          <input required type="email" name="email" id="email" placeholder="Email" class="form__input">
+  
+          <button class="form__action">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__social main-container">
+        <ul class="footer__list social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg viewBox="0 0 18 18" class="social__img">
+                <use xlink:href="./icons/social/faceb.svg#faceb">
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg viewBox="0 0 24 24" class="social__img">
+                <use xlink:href="./icons/social/inst.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg viewBox="0 0 22 18" class="social__img">
+                <use xlink:href="./icons/social/twit.svg#twit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg viewBox="0 0 24 24" class="social__img">
+                <use xlink:href="./icons/social/yt.svg#yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="footer__bottom">
+      <p class="footer__copyright">f&b ® 2020</p>
+    </div>
   </footer>
 </body>
 </html>

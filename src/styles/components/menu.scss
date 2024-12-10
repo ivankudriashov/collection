@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     column-gap: 64px;
-    // flex-wrap: wrap;
 
     @media screen and (width <= 920px) {
         gap: 32px;
@@ -21,8 +20,6 @@
         display: block;
         width: 100%;
         white-space: nowrap;
-        // padding-inline-start: 7px;
-        // padding-inline-end: 7px;
 
         &:hover {
             color: $primary-green;

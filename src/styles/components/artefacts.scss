@@ -1,0 +1,95 @@
+@import '../mixins/typography.scss';
+
+.artefacts {
+    &__title {
+        @include h2-bold-italic($white);
+
+        margin-block-end: 30px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 255px;
+        gap: 30px;
+
+        @media screen and (width <= 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-shade;
+        grid-column: 1 / 4;
+
+        @media screen and (width <= 768px) {
+            grid-column: 1 / 2;
+            justify-content: start;
+            overflow: auto;
+            scrollbar-width: none;
+        }
+
+        img {
+            display: block;
+            object-fit: contain;
+            object-position: center;
+
+            @media screen and (width <= 768px) {
+                width: 825px;
+            }
+        }
+    }
+
+    &__hint {
+        display: none;
+
+        @media screen and (width <= 768px) {
+            @include p1-main($grey);
+
+            position: absolute;
+            left: 15px;
+            bottom: 16px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .arrow-longest {
+            width: 80px;
+            fill: $grey;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 16px 16px 24px;
+        background-color: $primary-green;
+    }
+
+    &__subtitle {
+        @include h3-bold($background);
+
+        margin-block-end: 8px;
+    }
+
+    &__text {
+        @include p1-main($green-text);
+
+        margin-block-end: 24px;
+    }
+
+    &__text:last-of-type {
+        @media screen and (width <= 768px) {
+            margin-block-end: 74px;
+        }
+    }
+
+
+    &__link {
+        margin-block-start: auto;
+    }
+}

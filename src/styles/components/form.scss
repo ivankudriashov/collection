@@ -1,0 +1,72 @@
+@import '../mixins/typography';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 350px;
+
+    &__input {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 16px;
+        color: $background-shade;
+        background-color: $white;
+        padding: 10px 16px;
+        outline: none;
+        border: 1px solid $white;
+    }
+
+    &__input::placeholder {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: $grey;
+    }
+
+    &__input:hover {
+        background-color: $grey;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+
+    &__input:focus-visible {
+        outline: 1px solid $green-focus;
+        outline-offset: 3px;
+    }
+
+    &__action {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 16px;
+        color: $background-shade;
+        width: fit-content;
+        padding: 11px 26px;
+        cursor: pointer;
+        background-color: $primary-green;
+    }
+
+    &__action:hover {
+        background-color: $green-hover;
+    }
+
+    &__action:focus-visible {
+        outline: 1px solid $green-focus;
+        outline-offset: 2px;
+    }
+
+    &__action:active {
+        background-color: $green-activeclick;
+    }
+
+    &__action:disabled {
+        background-color: $grey;
+        color: rgba(11, 25, 25, .5);
+    }
+}
